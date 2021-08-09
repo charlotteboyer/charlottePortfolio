@@ -1,0 +1,75 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: #efdbd0;
+    background: rgb(19,18,18);
+    background: linear-gradient(90deg, rgba(19,18,18,1) 0%, rgba(239,219,208,1) 0%, rgba(255,189,129,1) 54%, rgba(246,184,197,1) 100%);
+    height: 100vh;
+
+    // color: #323232;
+    color: white;
+    text-shadow: 2px 2px #323232;
+
+    position: relative;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    width: 60%;
+
+    padding-bottom: 15px;
+    margin: 0 auto;
+
+    animation: fall 3s;
+    animation-iteration-count: 1;
+}
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    margin: 0 auto;
+
+    width: 60%;
+
+    padding: 2vw;
+
+    border: 2px solid white; 
+    border-radius: 5px;
+
+    animation: slide 1s;
+    animation-iteration-count: 1;
+}
+
+.name p {
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 25px;
+
+    font-size: 4rem;
+}
+
+.arrow:hover {
+    font-size: 5rem;
+}
+
+
+@keyframes fall {
+    from { transform: translate(0, -200px);     }
+    to   { transform: translate(0, 0); }
+}
+
+@keyframes slide {
+    from {transform: translate(-100%, 0); }
+    to { transform: translate(0,0); }
+}
