@@ -8,3 +8,17 @@
     text-transform: none;
     text-align: left;
 }
+
+.aboutPhoto {
+    margin: 0 auto;
+    width: 50%;
+    height: 25%;  
+    border-radius: 50%;
+}
+
+.aboutPhoto img {
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+    
+}

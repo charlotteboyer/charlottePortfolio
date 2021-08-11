@@ -33,6 +33,9 @@
 
     <section id="about" class="about">
         <div class="wrapper">
+            <div class="aboutPhoto">
+                <img src="./assets/733FBCFD-FCE9-4773-9DB8-273686E96E80_1_105_c.jpeg" alt="">
+            </div>
             <h2>About</h2>
             <p>Front End Web Developer from a film & television background. I am stoked about entering the world of developers where possibilities are endless and creativity thrives. Never wanting to be too comfortable, I look forward to a future filled with learning.
             Coming from an industry that is incredibly diverse I look forward to fostering positive relationships with everyone in my community. Well versed in CSS3, HTML5, Javascript & React I am armed with the tools needed to build and create, and an incredible talent of googling what I don't already know.</p>
@@ -43,20 +46,14 @@
     <section class="portfolio">
         <div class="wrapper">
             <h2>Portfolio</h2>
-            <div class="portfolioContainer">
-                <div class="app1 app">
+            <div class="carousel">
+                <div class="app1 app initial">
                     <div class="fridgePhoto photo">
                         <a href="https://fridgepoets.netlify.app/">
                         <img src="./assets/fridgePoetry.png" alt="">
                         </a>
                     </div>
-                    <div class="fridgeWords">
-                        <ul>
-                            <li>React</li>
-                            <li>Firebase</li>
-                        </ul>
-                        <p>An app built with React, Firebase and the that emulates the experience of magnet fridge poetry</p>
-                    </div> 
+                    <p>An app built with React, Firebase and the that emulates the experience of magnet fridge poetry</p>
                 </div>
                 <div class="app2 app">
                     <div class="manifestPhoto photo">
@@ -82,9 +79,16 @@
                     </div>
                     <p>A multi-page functional, responsive website built with Javascript (ES6), CSS3 (including SASS) & HTML5 translated from a static design</p>
                 </div>
+                <button class="prev" onclick="plusSlides(-1)"><</button>
+                <button class="next" onclick="plusSlides(1)">></button>
+            </div>
+            <div class="dots">
+                <div class="dot" onclick="currentSlide(1)"></div>
+                <div class="dot" onclick="currentSlide(2)"></div>
+                <div class="dot" onclick="currentSlide(3)"></div>
+                <div class="dot" onclick="currentSlide(4)"></div>
             </div>
         </div>
-
     </section>
 
     <section class="contact">
@@ -106,6 +110,7 @@
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/4fdcb3a418.js" crossorigin="anonymous"></script>
+<script src="./scripts.js"></script>
 </html>
 
 <!-- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); -->
