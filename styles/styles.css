@@ -460,6 +460,21 @@ form button {
   text-align: left;
 }
 
+.aboutPhoto {
+  margin: 0 auto;
+  width: 50%;
+  height: 25%;
+  border-radius: 50%;
+}
+
+.aboutPhoto img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+
 .portfolio {
   background-color: #ffbd81;
   text-align: center;
@@ -475,24 +490,68 @@ form button {
 }
 
 .photo {
-  width: 50%;
+  width: 75%;
+  margin: 0 auto;
   padding-bottom: 25px;
 }
 
-.portfolioContainer img {
+.carousel img {
   max-width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
 }
 
-.app {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.carousel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.fridgeWords {
-  width: 50%;
-  text-align: left;
-  padding-left: 10px;
+.app {
+  display: none;
+  margin: 0 auto;
+  position: relative;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.next {
+  right: 0;
+  bottom: 50%;
+}
+
+.prev {
+  left: 0;
+  bottom: 50%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }
