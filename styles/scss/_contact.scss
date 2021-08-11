@@ -1,0 +1,42 @@
+.contact {
+    // background-color: $prettyPink;
+    background-color: white;
+
+    text-align: center;
+
+    padding: 5% 0;
+}
+
+.contact p {
+    width: 60%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    padding: 5px 0 10px;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+}
+
+input, textarea {
+    background-color: $prettyPink;
+    border: none;
+}
+
+form button {
+    width: 100px;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px 0;
+}

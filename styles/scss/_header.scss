@@ -10,7 +10,7 @@ header {
 
     // color: #323232;
     color: white;
-    text-shadow: 2px 2px #323232;
+    text-shadow: 2px 2px $grandpaGray;
 
     position: relative;
 }
@@ -57,6 +57,11 @@ h1 {
     bottom: 25px;
 
     font-size: 4rem;
+    
+}
+
+.arrow a {
+    color: white;
 }
 
 .arrow:hover {

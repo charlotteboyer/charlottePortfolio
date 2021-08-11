@@ -1,0 +1,37 @@
+
+.portfolio {
+    background-color: $yumCreamsicle;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.portfolio h2 {
+    margin-bottom: 5%;
+}
+
+
+.portfolio p {
+    text-transform: none;
+}
+
+.photo {
+    width: 50%; 
+    padding-bottom: 25px;
+}
+
+
+.portfolioContainer img {
+    max-width: 100%;
+    object-fit: fill;
+    
+}
+
+.app {
+    display: flex;
+}
+
+.fridgeWords {
+    width: 50%;
+    text-align: left;
+    padding-left: 10px;
+}

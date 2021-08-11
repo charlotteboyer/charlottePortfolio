@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 
 </head>
@@ -17,7 +18,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
+                <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -26,24 +27,78 @@
             <p>Front End Web Developer<p>
         </div>
         <div class="arrow">
-            <i class="fas fa-chevron-down"></i>
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
         </div>
     </header>
 
-    <section>
-        <h2>About</h2>
-        <p>Front End Web Developer from a film & television background. I am stoked about entering the world of developers where possibilities are endless and creativity thrives. Never wanting to be too comfortable, I welcome the unknown and look forward to a future filled with learning.
-        Coming from an industry that is incredibly diverse I look forward to fostering positive relationships with everyone in my community. Well versed in CSS3, HTML5, Javascript & React I am armed with the tools needed to build and create.</p>
+    <section id="about" class="about">
+        <div class="wrapper">
+            <h2>About</h2>
+            <p>Front End Web Developer from a film & television background. I am stoked about entering the world of developers where possibilities are endless and creativity thrives. Never wanting to be too comfortable, I look forward to a future filled with learning.
+            Coming from an industry that is incredibly diverse I look forward to fostering positive relationships with everyone in my community. Well versed in CSS3, HTML5, Javascript & React I am armed with the tools needed to build and create, and an incredible talent of googling what I don't already know.</p>
+        </div>
 
     </section>
 
-    <section>
-        <h2>Work</h2>
+    <section class="portfolio">
+        <div class="wrapper">
+            <h2>Portfolio</h2>
+            <div class="portfolioContainer">
+                <div class="app1 app">
+                    <div class="fridgePhoto photo">
+                        <a href="https://fridgepoets.netlify.app/">
+                        <img src="./assets/fridgePoetry.png" alt="">
+                        </a>
+                    </div>
+                    <div class="fridgeWords">
+                        <ul>
+                            <li>React</li>
+                            <li>Firebase</li>
+                        </ul>
+                        <p>An app built with React, Firebase and the that emulates the experience of magnet fridge poetry</p>
+                    </div> 
+                </div>
+                <div class="app2 app">
+                    <div class="manifestPhoto photo">
+                        <a href="https://manifest-station.netlify.app/">
+                        <img src="./assets/manifest-tation.png" alt="">
+                        </a>
+                    </div>
+                    <p>An app built with React and firebase that allows the user to either choose from pre-written manifestations or write their own and record them for repitition</p>
+                </div>
+                <div class="app3 app">
+                    <div class="covidPhoto photo">
+                        <a href="https://junoprojecttwogroupone.github.io/covidTravelApp/">
+                        <img src="./assets/covidTravelApp.png" alt="">
+                        </a>
+                    </div>
+                    <p>An app built with Javascript (ES6), CSS3 (including SASS) & HTML5 and the assistance of a third party API. It allows the user to choose a country they wish to travel to and see the current covid-19 stats in that country.</p>
+                </div>
+                <div class="app4 app">
+                    <div class="restoPhoto photo">
+                        <a href="https://the-restaurant-mall-website.netlify.app/">
+                        <img src="./assets/restomall.png" alt="">
+                        </a>
+                    </div>
+                    <p>A multi-page functional, responsive website built with Javascript (ES6), CSS3 (including SASS) & HTML5 translated from a static design</p>
+                </div>
+            </div>
+        </div>
 
     </section>
 
-    <section>
-        <h2>Contact</h2>
+    <section class="contact">
+        <div class="wrapper">
+            <h2>Contact</h2>
+            <p>Shoot me a message if you've got something to share! Including videos of babies, sloths or baby sloths </p>
+            <ul>
+                <li>Email</li>
+                <li>Phone</li>
+                <li>Github</li>
+                <li>twitter</li>
+                <li>linked in</li>
+            </ul>
+        </div>
     </section>
 
     <footer>
