@@ -5,19 +5,12 @@ header {
     align-items: center;
     background: rgb(255,189,129);
     background: linear-gradient(180deg, rgba(255,189,129,1) 0%, rgba(246,184,197,1) 46%, rgba(239,219,208,1) 96%);
-    // background: rgb(19,18,18);
-    // background: linear-gradient(90deg, rgba(19,18,18,1) 0%, rgba(239,219,208,1) 0%, rgba(255,189,129,1) 54%, rgba(246,184,197,1) 100%);
     height: 100vh;
-
-    // color: #323232;
     color: $grandpaGray;
-    // text-shadow: 2px 2px $grandpaGray;
-
-    position: relative;
 }
 
 nav {
-    width: 90%;
+    width: 100%;
 }
 
 nav ul{
@@ -43,13 +36,36 @@ nav ul{
     width: 100%;
 }
 
+.navFixed ul {
+    animation: none;
+}
 .navFixed a {
     font-size: 1.8rem;
     color: $boringBeige;
 }
 
+.menuButton {
+    font-size: 4rem;
+    position: fixed;
+    background: none;
+    top: 0;
+    display: none;
+    border: none;
+    padding: 5px;
+}
+
+.menuButton i {
+    background: $yumCreamsicle;
+    border-radius: 50%;
+}
+
+.show {
+    display: block;
+}
+
 h1 {
-    font-size: 6rem;
+    font-size: calc(3rem + 2vw);
+    letter-spacing: 3px;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
@@ -57,9 +73,9 @@ h1 {
 
     margin: 0 auto;
 
-    width: 60%;
+    width: 70%;
 
-    padding: 2vw;
+    padding: 2vw 0;
 
     border: 2px solid $grandpaGray; 
     border-radius: 5px;

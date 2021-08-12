@@ -15,6 +15,7 @@
 <body>
     <header class="home">
         <nav>
+            <button class="menuButton" aria-label="menu"><i class="far fa-smile"></i></button>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -37,8 +38,8 @@
             <div class="aboutPhoto">
                 <img src="./assets/733FBCFD-FCE9-4773-9DB8-273686E96E80_1_105_c.jpeg" alt="">
             </div>
-            <p>Front End Web Developer from a film & television background. I am stoked about entering the world of developers where possibilities are endless and creativity thrives. Never wanting to be too comfortable, I look forward to a future filled with learning.
-            Coming from an industry that is incredibly diverse I look forward to fostering positive relationships with everyone in my community. Well versed in CSS3, HTML5, Javascript & React I am armed with the tools needed to build and create, and an incredible talent of googling what I don't already know.</p>
+            <p>Front End Web Developer from a film & television production background. I am stoked to be part of  a community where possibilities are endless and creativity thrives. Never wanting to be too comfortable, I look forward to a future filled with learning. <br>
+            Coming from an industry that is incredibly diverse I look forward to fostering positive relationships with everyone in my community. Well versed in CSS3, HTML5, Javascript & React I am armed with the tools needed to build and create, and whatever I don't know - I'll find out.</p>
         </div>
 
     </section>
@@ -83,14 +84,16 @@
                     <h3> Javascript ES6 | CSS3 | SCSS | HTML5 </h3>
                     <p>A multi-page functional, responsive website built with Javascript (ES6), CSS3 (including SASS) & HTML5 translated from a static design</p>
                 </div>
-                <button class="prev" onclick="plusSlides(-1)"><</button>
-                <button class="next" onclick="plusSlides(1)">></button>
+                <button class="prev"><</button>
+                <button class="next">></button>
+                 <!-- <button class="prev" onclick="plusSlides(-1)"><</button>
+                <button class="next" onclick="plusSlides(1)">></button> -->
             </div>
             <div class="dots">
-                <div class="dot" onclick="currentSlide(1)"></div>
-                <div class="dot" onclick="currentSlide(2)"></div>
-                <div class="dot" onclick="currentSlide(3)"></div>
-                <div class="dot" onclick="currentSlide(4)"></div>
+                <div data-whichDot="1" data-person="charlotte" class="dot"></div>
+                <div data-whichDot="2" class="dot"></div>
+                <div data-whichDot="3" class="dot"></div>
+                <div data-whichDot="4" class="dot"></div>
             </div>
         </div>
     </section>
@@ -139,7 +142,7 @@
     </section>
 
     <footer>
-        <p>created @ Juno College</p>
+        <p>Created @ Juno College</p>
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/4fdcb3a418.js" crossorigin="anonymous"></script>

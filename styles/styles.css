@@ -2,7 +2,7 @@
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
-  color: #474545;
+  color: black;
 }
 
 h1, h2 {
@@ -14,7 +14,7 @@ h2 {
   font-weight: 300;
   margin: 0 auto;
   padding: 5px 10px;
-  border: 1px solid #474545;
+  border: 1px solid black;
   border-radius: 5px;
   display: inline-block;
 }
@@ -41,7 +41,7 @@ p {
 
 nav a {
   text-decoration: none;
-  color: #474545;
+  color: black;
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -59,7 +59,12 @@ form {
 footer {
   background-color: #efdbd0;
   text-align: center;
-  margin: 0;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-transform: none;
 }
 
 html {
@@ -317,12 +322,11 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffbd81), color-stop(46%, #f6b8c5), color-stop(96%, #efdbd0));
   background: linear-gradient(180deg, #ffbd81 0%, #f6b8c5 46%, #efdbd0 96%);
   height: 100vh;
-  color: #474545;
-  position: relative;
+  color: black;
 }
 
 nav {
-  width: 90%;
+  width: 100%;
 }
 
 nav ul {
@@ -348,10 +352,15 @@ nav ul {
 .navFixed {
   position: fixed;
   top: 0;
-  background-color: #474545;
+  background-color: black;
   padding: 10px;
   z-index: 1000;
   width: 100%;
+}
+
+.navFixed ul {
+  -webkit-animation: none;
+          animation: none;
 }
 
 .navFixed a {
@@ -359,16 +368,36 @@ nav ul {
   color: #efdbd0;
 }
 
+.menuButton {
+  font-size: 4rem;
+  position: fixed;
+  background: none;
+  top: 0;
+  display: none;
+  border: none;
+  padding: 5px;
+}
+
+.menuButton i {
+  background: #ffbd81;
+  border-radius: 50%;
+}
+
+.show {
+  display: block;
+}
+
 h1 {
-  font-size: 6rem;
+  font-size: calc(3rem + 2vw);
+  letter-spacing: 3px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
   margin: 0 auto;
-  width: 60%;
-  padding: 2vw;
-  border: 2px solid #474545;
+  width: 70%;
+  padding: 2vw 0;
+  border: 2px solid black;
   border-radius: 5px;
   -webkit-animation: slide 1s;
           animation: slide 1s;
@@ -387,7 +416,7 @@ h1 {
 }
 
 .arrow a {
-  color: #474545;
+  color: black;
 }
 
 .arrow:hover {
@@ -506,7 +535,7 @@ form button {
 .contact li a {
   font-size: 5rem;
   text-decoration: none;
-  color: #474545;
+  color: black;
 }
 
 .emailPhone {
@@ -520,7 +549,7 @@ form button {
 }
 
 .emailPhone a {
-  color: #474545;
+  color: black;
   text-decoration: none;
   padding: 10px;
 }
@@ -536,12 +565,13 @@ form button {
 .about p {
   text-transform: none;
   text-align: left;
+  font-weight: 300;
+  line-height: 30px;
 }
 
 .aboutPhoto {
   margin: 0 auto;
-  width: 50%;
-  height: 25%;
+  width: 70%;
   border-radius: 50%;
   padding: 5% 0;
 }
@@ -553,8 +583,8 @@ form button {
   -o-object-position: right;
      object-position: right;
   border-radius: 15%;
-  -webkit-box-shadow: 3px 3px 3px #474545;
-          box-shadow: 3px 3px 3px #474545;
+  -webkit-box-shadow: 3px 3px 3px #f6b8c5;
+          box-shadow: 3px 3px 3px #f6b8c5;
 }
 
 .portfolio {
@@ -584,8 +614,8 @@ form button {
   -o-object-fit: fill;
      object-fit: fill;
   border-radius: 15px;
-  -webkit-box-shadow: 3px 3px 3px #474545;
-          box-shadow: 3px 3px 3px #474545;
+  -webkit-box-shadow: 3px 3px 3px #ffbd81;
+          box-shadow: 3px 3px 3px #ffbd81;
 }
 
 .carousel {
@@ -606,7 +636,7 @@ form button {
   background: none;
   position: absolute;
   padding: 16px;
-  color: #474545;
+  color: black;
   font-weight: bold;
   font-size: 4rem;
   -webkit-transition: 0.6s ease;
@@ -648,4 +678,104 @@ form button {
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+@media (max-width: 768px) {
+  .aboutPhoto {
+    width: 75%;
+  }
+
+  .about p {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: calc(1.6rem + 2vw);
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: calc(1.4rem + 2vw);
+  }
+
+  .menuButton {
+    display: block;
+    z-index: 1005;
+  }
+
+  .menuButton i:hover {
+    background: #efdbd0;
+    border-radius: 50%;
+  }
+
+  nav ul {
+    width: auto;
+    top: 60px;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: none;
+    -webkit-animation: none;
+            animation: none;
+    position: fixed;
+    background: #ffbd81;
+    padding-top: 5px;
+  }
+
+  nav a {
+    font-size: 1.8rem;
+    padding: 5px;
+  }
+
+  nav a:hover {
+    background-color: #efdbd0;
+  }
+
+  .navFixed {
+    background: none;
+  }
+
+  .navFixed a {
+    color: black;
+  }
+
+  .about p {
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .prev,
+.next {
+    font-size: 2rem;
+  }
+
+  .next {
+    right: 0;
+    bottom: 70%;
+  }
+
+  .prev {
+    left: 0;
+    bottom: 70%;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
 }
