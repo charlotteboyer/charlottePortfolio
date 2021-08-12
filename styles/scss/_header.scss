@@ -3,16 +3,21 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // background-color: #efdbd0;
-    background: rgb(19,18,18);
-    background: linear-gradient(90deg, rgba(19,18,18,1) 0%, rgba(239,219,208,1) 0%, rgba(255,189,129,1) 54%, rgba(246,184,197,1) 100%);
+    background: rgb(255,189,129);
+    background: linear-gradient(180deg, rgba(255,189,129,1) 0%, rgba(246,184,197,1) 46%, rgba(239,219,208,1) 96%);
+    // background: rgb(19,18,18);
+    // background: linear-gradient(90deg, rgba(19,18,18,1) 0%, rgba(239,219,208,1) 0%, rgba(255,189,129,1) 54%, rgba(246,184,197,1) 100%);
     height: 100vh;
 
     // color: #323232;
-    color: white;
-    text-shadow: 2px 2px $grandpaGray;
+    color: $grandpaGray;
+    // text-shadow: 2px 2px $grandpaGray;
 
     position: relative;
+}
+
+nav {
+    width: 90%;
 }
 
 nav ul{
@@ -29,8 +34,23 @@ nav ul{
     animation-iteration-count: 1;
 }
 
+.navFixed {
+    position: fixed;
+    top: 0; 
+    background-color: $grandpaGray;
+    padding: 10px;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navFixed a {
+    font-size: 1.8rem;
+    color: $boringBeige;
+}
+
 h1 {
     font-size: 6rem;
+    font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
@@ -41,7 +61,7 @@ h1 {
 
     padding: 2vw;
 
-    border: 2px solid white; 
+    border: 2px solid $grandpaGray; 
     border-radius: 5px;
 
     animation: slide 1s;
@@ -61,7 +81,7 @@ h1 {
 }
 
 .arrow a {
-    color: white;
+    color: $grandpaGray;
 }
 
 .arrow:hover {

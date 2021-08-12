@@ -2,6 +2,7 @@
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+  color: #474545;
 }
 
 h1, h2 {
@@ -13,9 +14,15 @@ h2 {
   font-weight: 300;
   margin: 0 auto;
   padding: 5px 10px;
-  border: 1px solid #323232;
+  border: 1px solid #474545;
   border-radius: 5px;
   display: inline-block;
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 ul {
@@ -34,9 +41,9 @@ p {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: #474545;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 form {
@@ -47,6 +54,12 @@ form {
   max-width: 1080px;
   width: 90%;
   margin: 0 auto;
+}
+
+footer {
+  background-color: #efdbd0;
+  text-align: center;
+  margin: 0;
 }
 
 html {
@@ -300,13 +313,16 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #131212;
-  background: -webkit-gradient(linear, left top, right top, from(#131212), color-stop(0%, #efdbd0), color-stop(54%, #ffbd81), to(#f6b8c5));
-  background: linear-gradient(90deg, #131212 0%, #efdbd0 0%, #ffbd81 54%, #f6b8c5 100%);
+  background: #ffbd81;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffbd81), color-stop(46%, #f6b8c5), color-stop(96%, #efdbd0));
+  background: linear-gradient(180deg, #ffbd81 0%, #f6b8c5 46%, #efdbd0 96%);
   height: 100vh;
-  color: white;
-  text-shadow: 2px 2px #323232;
+  color: #474545;
   position: relative;
+}
+
+nav {
+  width: 90%;
 }
 
 nav ul {
@@ -329,15 +345,30 @@ nav ul {
           animation-iteration-count: 1;
 }
 
+.navFixed {
+  position: fixed;
+  top: 0;
+  background-color: #474545;
+  padding: 10px;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navFixed a {
+  font-size: 1.8rem;
+  color: #efdbd0;
+}
+
 h1 {
   font-size: 6rem;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
   margin: 0 auto;
   width: 60%;
   padding: 2vw;
-  border: 2px solid white;
+  border: 2px solid #474545;
   border-radius: 5px;
   -webkit-animation: slide 1s;
           animation: slide 1s;
@@ -356,7 +387,7 @@ h1 {
 }
 
 .arrow a {
-  color: white;
+  color: #474545;
 }
 
 .arrow:hover {
@@ -405,7 +436,9 @@ h1 {
   }
 }
 .contact {
-  background-color: white;
+  background: #131212;
+  background: -webkit-gradient(linear, left top, left bottom, from(#131212), color-stop(0%, #f6b8c5), color-stop(96%, #efdbd0));
+  background: linear-gradient(180deg, #131212 0%, #f6b8c5 0%, #efdbd0 96%);
   text-align: center;
   padding: 5% 0;
 }
@@ -414,6 +447,7 @@ h1 {
   width: 60%;
   margin: 0 auto;
   padding: 25px 0;
+  text-transform: none;
 }
 
 form {
@@ -438,7 +472,7 @@ input {
 }
 
 input, textarea {
-  background-color: #f6b8c5;
+  background-color: #efdbd0;
   border: none;
 }
 
@@ -446,11 +480,55 @@ form button {
   width: 100px;
   border: none;
   padding: 5px 10px;
-  margin: 5px 0;
+  margin: 20px 0;
+  background-color: #efdbd0;
+}
+
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contact a {
+  font-size: 1.8rem;
+}
+
+.contact li {
+  font-size: 5rem;
+}
+
+.contact li a {
+  font-size: 5rem;
+  text-decoration: none;
+  color: #474545;
+}
+
+.emailPhone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.emailPhone a {
+  color: #474545;
+  text-decoration: none;
+  padding: 10px;
 }
 
 .about {
-  background-color: #efdbd0;
+  background: #131212;
+  background: -webkit-gradient(linear, left top, left bottom, from(#131212), color-stop(0%, #efdbd0), color-stop(96%, #ffbd81));
+  background: linear-gradient(180deg, #131212 0%, #efdbd0 0%, #ffbd81 96%);
   text-align: center;
   padding: 10%;
 }
@@ -465,6 +543,7 @@ form button {
   width: 50%;
   height: 25%;
   border-radius: 50%;
+  padding: 5% 0;
 }
 
 .aboutPhoto img {
@@ -473,10 +552,15 @@ form button {
      object-fit: cover;
   -o-object-position: right;
      object-position: right;
+  border-radius: 15%;
+  -webkit-box-shadow: 3px 3px 3px #474545;
+          box-shadow: 3px 3px 3px #474545;
 }
 
 .portfolio {
-  background-color: #ffbd81;
+  background: #131212;
+  background: -webkit-gradient(linear, left top, left bottom, from(#131212), color-stop(0%, #ffbd81), color-stop(96%, #f6b8c5));
+  background: linear-gradient(180deg, #131212 0%, #ffbd81 0%, #f6b8c5 96%);
   text-align: center;
   padding: 5% 0;
 }
@@ -499,6 +583,9 @@ form button {
   max-width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 3px #474545;
+          box-shadow: 3px 3px 3px #474545;
 }
 
 .carousel {
@@ -516,18 +603,25 @@ form button {
 .prev,
 .next {
   cursor: pointer;
+  background: none;
   position: absolute;
   padding: 16px;
-  color: white;
+  color: #474545;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 4rem;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
+  border: none;
   border-radius: 0 3px 3px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  color: white;
 }
 
 .next {

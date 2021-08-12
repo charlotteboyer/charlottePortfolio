@@ -2,6 +2,16 @@
 
 // myApp.init = () => {
 
+window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    console.log(currentScroll)
+    if (currentScroll > 615) {
+        document.querySelector('nav').classList.add('navFixed');
+    } else if (currentScroll < 615) {
+        document.querySelector('nav').classList.remove('navFixed');
+    }
+})
+
 let slideIndex = 1; 
 
 showSlides(slideIndex);
