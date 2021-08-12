@@ -13,13 +13,13 @@
 
 </head>
 <body>
-    <header>
-        <nav class="wrapper">
+    <header class="home">
+        <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="name wrapper">
@@ -33,17 +33,17 @@
 
     <section id="about" class="about">
         <div class="wrapper">
+            <h2>About</h2>
             <div class="aboutPhoto">
                 <img src="./assets/733FBCFD-FCE9-4773-9DB8-273686E96E80_1_105_c.jpeg" alt="">
             </div>
-            <h2>About</h2>
             <p>Front End Web Developer from a film & television background. I am stoked about entering the world of developers where possibilities are endless and creativity thrives. Never wanting to be too comfortable, I look forward to a future filled with learning.
             Coming from an industry that is incredibly diverse I look forward to fostering positive relationships with everyone in my community. Well versed in CSS3, HTML5, Javascript & React I am armed with the tools needed to build and create, and an incredible talent of googling what I don't already know.</p>
         </div>
 
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="wrapper">
             <h2>Portfolio</h2>
             <div class="carousel">
@@ -53,6 +53,7 @@
                         <img src="./assets/fridgePoetry.png" alt="">
                         </a>
                     </div>
+                    <h3>React | firebase | SCSS | CSS3 | API </h3>
                     <p>An app built with React, Firebase and the that emulates the experience of magnet fridge poetry</p>
                 </div>
                 <div class="app2 app">
@@ -61,6 +62,7 @@
                         <img src="./assets/manifest-tation.png" alt="">
                         </a>
                     </div>
+                    <h3> React| Firebase | CSS3 | SCSS </h3>
                     <p>An app built with React and firebase that allows the user to either choose from pre-written manifestations or write their own and record them for repitition</p>
                 </div>
                 <div class="app3 app">
@@ -69,6 +71,7 @@
                         <img src="./assets/covidTravelApp.png" alt="">
                         </a>
                     </div>
+                    <h3> Javascript ES6| API | CSS3 | SCSS | HTML </h3>
                     <p>An app built with Javascript (ES6), CSS3 (including SASS) & HTML5 and the assistance of a third party API. It allows the user to choose a country they wish to travel to and see the current covid-19 stats in that country.</p>
                 </div>
                 <div class="app4 app">
@@ -77,6 +80,7 @@
                         <img src="./assets/restomall.png" alt="">
                         </a>
                     </div>
+                    <h3> Javascript ES6 | CSS3 | SCSS | HTML5 </h3>
                     <p>A multi-page functional, responsive website built with Javascript (ES6), CSS3 (including SASS) & HTML5 translated from a static design</p>
                 </div>
                 <button class="prev" onclick="plusSlides(-1)"><</button>
@@ -91,18 +95,47 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="wrapper">
             <h2>Contact</h2>
-            <p>Shoot me a message if you've got something to share! Including videos of babies, sloths or baby sloths </p>
+            <p>Drop me a line if you feel so inclined... </p>
+            <form action="https://formspree.io/f/mwkargjp" method="POST">
+                <label for="text">Name</label>
+                <input type="text" name="_replyto">
+                <label for="email">Email</label>
+                <input type="email" name="_replyto">
+                <label>Subject</label>
+                <input type="email" name="_replyto">
+                <label for="textarea">Message</label>
+                <textarea name="message"></textarea>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
             <ul>
-                <li>Email</li>
-                <li>Phone</li>
-                <li>Github</li>
-                <li>twitter</li>
-                <li>linked in</li>
+                <li>
+                    <span class="sr-only">github</span>
+                    <a href="https://github.com/charlotteboyer">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                </li>
+                <li>
+                    <span class="sr-only">twitter</span>
+                    <a href="https://twitter.com/thecharboyer">
+                        <i class="devicon-twitter-original"></i>
+                    </a>
+                </li>
+                <li>
+                    <span class="sr-only">linkedIn</span>
+                    <a href="https://www.linkedin.com/in/charlotte-boyer-521525119/">
+                        <i class="devicon-linkedin-plain"></i>
+                    </a>
+                </li>
             </ul>
-        </div>
+            <div class="emailPhone">
+                <a href="mailto:charlottecboyer@gmail.com">charlottecboyer@gmail.com </a>
+                <a>416-529-6548</a>
+            </div>
+            </div>
     </section>
 
     <footer>
@@ -112,5 +145,3 @@
 <script src="https://kit.fontawesome.com/4fdcb3a418.js" crossorigin="anonymous"></script>
 <script src="./scripts.js"></script>
 </html>
-
-<!-- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); -->
