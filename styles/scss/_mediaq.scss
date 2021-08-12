@@ -1,12 +1,17 @@
 
 @media (max-width: 768px) {
 
+    .aboutContainer {
+        flex-direction: column;
+    }
+
     .aboutPhoto {
         width: 75%;
     }
 
     .about p {
         font-size: 1.6rem;
+        width: 100%;
     }
 
     h1 {
