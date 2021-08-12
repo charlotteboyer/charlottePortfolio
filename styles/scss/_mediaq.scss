@@ -1,0 +1,109 @@
+
+@media (max-width: 768px) {
+
+    .aboutContainer {
+        flex-direction: column;
+    }
+
+    .aboutPhoto {
+        width: 75%;
+    }
+
+    .about p {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: calc(1.6rem + 2vw);
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio p {
+        font-size: 1.6rem;
+
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+
+
+    h1 {
+        font-size: calc(1.4rem + 2vw);
+    }
+
+    .menuButton {
+        display: block;
+        z-index: 1005;
+        
+    }
+
+    .menuButton i:hover {
+        background: $boringBeige;
+        border-radius: 50%;
+    }
+
+    nav ul {
+        width: auto;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+
+        display: none;
+        animation: none;
+        position: fixed;
+        background: $yumCreamsicle;
+        padding-top: 5px;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+        padding: 5px;
+    }
+
+    nav a:hover {
+        background-color: $boringBeige;
+    }
+
+    .navFixed {
+        background: none;
+    }
+
+    .navFixed a {
+        color: $grandpaGray;
+    }
+
+    .about p {
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .prev,
+    .next {
+        font-size: 2rem;
+    }
+
+    .next {
+    right: 0;
+    bottom: 70%;
+    }
+
+    .prev {
+    left: 0;
+    bottom: 70%;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+
+    }
+
+}

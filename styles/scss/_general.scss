@@ -6,6 +6,7 @@ html {
     color: $grandpaGray;
 }
 
+
 h1, h2 {
     margin: 0;
 }
@@ -64,7 +65,11 @@ form {
 footer {
     background-color: $boringBeige;
     text-align: center;
-    margin: 0;
+    padding: 20px;
+}
 
+footer p {
+    font-size: 1.2rem;
+    text-transform: none;
 }
 
