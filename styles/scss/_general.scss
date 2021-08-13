@@ -3,7 +3,9 @@
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    color: black;
 }
+
 
 h1, h2 {
     margin: 0;
@@ -15,9 +17,17 @@ h2 {
 
     margin: 0 auto;
     padding: 5px 10px;
-    border: 1px solid $grandpaGray;
+    border: 1px solid black;
     border-radius: 5px;
     display: inline-block;
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+
 }
 
 ul {
@@ -36,9 +46,9 @@ p {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 form {
@@ -50,5 +60,16 @@ form {
     max-width: 1080px;
     width: 90%;
     margin: 0 auto;
+}
+
+footer {
+    background-color: $boringBeige;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    text-transform: none;
 }
 
