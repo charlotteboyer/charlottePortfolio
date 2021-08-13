@@ -27,6 +27,10 @@
 
     }
 
+    form {
+        width: 100%;
+    }
+
 
 
 }
@@ -35,7 +39,7 @@
 
 
     h1 {
-        font-size: calc(1.4rem + 2vw);
+        font-size: calc(2rem + 3vw);
     }
 
     .menuButton {
@@ -78,7 +82,7 @@
     }
 
     .navFixed a {
-        color: $grandpaGray;
+        color: black;
     }
 
     .about p {
@@ -105,5 +109,7 @@
         font-size: 1.2rem;
 
     }
+
+    
 
 }
