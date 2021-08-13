@@ -487,7 +487,7 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -680,7 +680,7 @@ form button {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #efdbd0;
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
@@ -688,7 +688,7 @@ form button {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #ffbd81;
 }
 
 @media (max-width: 768px) {
@@ -719,10 +719,14 @@ form button {
   .portfolio p {
     font-size: 1.6rem;
   }
+
+  form {
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
   h1 {
-    font-size: calc(1.4rem + 2vw);
+    font-size: calc(2rem + 3vw);
   }
 
   .menuButton {

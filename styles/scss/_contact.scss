@@ -18,7 +18,7 @@
 form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -63,7 +63,7 @@ form button {
 .contact li a {
     font-size: 5rem;
     text-decoration: none;
-    color: $grandpaGray;
+    color: black;
 }
 
 .emailPhone {
@@ -72,7 +72,7 @@ form button {
 }
 
 .emailPhone a {
-    color: $grandpaGray;
+    color: black;
     text-decoration: none;
     padding: 5px;
 }

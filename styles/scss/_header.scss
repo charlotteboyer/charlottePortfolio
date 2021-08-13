@@ -6,7 +6,7 @@ header {
     background: rgb(255,189,129);
     background: linear-gradient(180deg, rgba(255,189,129,1) 0%, rgba(246,184,197,1) 46%, rgba(239,219,208,1) 96%);
     height: 100vh;
-    color: $grandpaGray;
+    color: black;
 }
 
 nav {
@@ -30,7 +30,7 @@ nav ul{
 .navFixed {
     position: fixed;
     top: 0; 
-    background-color: $grandpaGray;
+    background-color: black;
     padding: 10px;
     z-index: 1000;
     width: 100%;
@@ -77,7 +77,7 @@ h1 {
 
     padding: 2vw 0;
 
-    border: 2px solid $grandpaGray; 
+    border: 2px solid black; 
     border-radius: 5px;
 
     animation: slide 1s;
@@ -97,7 +97,7 @@ h1 {
 }
 
 .arrow a {
-    color: $grandpaGray;
+    color: black;
 }
 
 .arrow:hover {
