@@ -84,6 +84,14 @@ h1 {
     animation-iteration-count: 1;
 }
 
+h1 span {
+    font-size: calc(2.5rem + 2vw);
+}
+
+h1 span i:hover {
+    animation: jump 2s;
+}
+
 .name p {
     text-align: center;
 }
@@ -102,6 +110,11 @@ h1 {
 
 .arrow:hover {
     font-size: 5rem;
+}
+
+@keyframes jump {
+    from { transform: translate(0, -10px);     }
+    to   { transform: translate(0, 0); }
 }
 
 

@@ -1,13 +1,12 @@
 .about {
-    // background-color: $boringBeige;
-    background: rgb(19,18,18);
-    background: linear-gradient(180deg, rgba(19,18,18,1) 0%, rgba(239,219,208,1) 0%, rgba(255,189,129,1) 96%);
+    background-color: white;
     text-align: center;
     padding: 5% 0 0 0;
 }
 
 .aboutContainer {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
@@ -15,16 +14,14 @@
     text-transform: none;
     text-align: left;
     font-weight: 300;
-    width: 50%;
-    padding: 5% 0 5% 25px;
-
+    width: calc(50% - 10px); 
+    padding: 5% 10px 5% 25px;
     line-height: 30px;
 }
 
 .aboutPhoto {
     margin: 0 auto;
-    width: 50%;  
-    border-radius: 50%;
+    width: calc(50% - 10px);  
     padding: 5% 0;
 }
 
@@ -32,7 +29,7 @@
     width: 100%;
     object-fit: cover;
     object-position: right;
-    border-radius: 15%;
+    border-radius: 30% 70% 38% 62% / 54% 74% 26% 46% ;
     box-shadow: 3px 3px 3px $prettyPink;
     
 }

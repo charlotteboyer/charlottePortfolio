@@ -1,6 +1,5 @@
 .contact {
-    background: rgb(19,18,18);
-    background: linear-gradient(180deg, rgba(19,18,18,1) 0%, rgba(246,184,197,1) 0%, rgba(239,219,208,1) 96%);
+    background-color: $boringBeige;
 
     text-align: center;
 
@@ -33,16 +32,26 @@ input {
 }
 
 input, textarea {
-    background-color: $boringBeige;
+    background-color: white;
     border: none;
 }
 
 form button {
     width: 100px;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin: 20px 0;
-    background-color: $boringBeige;
+    background-color: black;
+    color: $boringBeige;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background-color: #ec9c51;
+}
+
+form button:active {
+    box-shadow: 2px 2px black;
 }
 
 .contact ul {
@@ -66,12 +75,12 @@ form button {
     color: black;
 }
 
-.emailPhone {
+.email {
     display: flex;
     flex-direction: column;
 }
 
-.emailPhone a {
+.email a {
     color: black;
     text-decoration: none;
     padding: 5px;

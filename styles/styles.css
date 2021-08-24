@@ -405,6 +405,15 @@ h1 {
           animation-iteration-count: 1;
 }
 
+h1 span {
+  font-size: calc(2.5rem + 2vw);
+}
+
+h1 span i:hover {
+  -webkit-animation: jump 2s;
+          animation: jump 2s;
+}
+
 .name p {
   text-align: center;
 }
@@ -423,6 +432,27 @@ h1 {
   font-size: 5rem;
 }
 
+@-webkit-keyframes jump {
+  from {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes jump {
+  from {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
 @-webkit-keyframes fall {
   from {
     -webkit-transform: translate(0, -200px);
@@ -433,7 +463,6 @@ h1 {
             transform: translate(0, 0);
   }
 }
-
 @keyframes fall {
   from {
     -webkit-transform: translate(0, -200px);
@@ -465,9 +494,7 @@ h1 {
   }
 }
 .contact {
-  background: #131212;
-  background: -webkit-gradient(linear, left top, left bottom, from(#131212), color-stop(0%, #f6b8c5), color-stop(96%, #efdbd0));
-  background: linear-gradient(180deg, #131212 0%, #f6b8c5 0%, #efdbd0 96%);
+  background-color: #efdbd0;
   text-align: center;
   padding: 5% 0;
 }
@@ -501,16 +528,27 @@ input {
 }
 
 input, textarea {
-  background-color: #efdbd0;
+  background-color: white;
   border: none;
 }
 
 form button {
   width: 100px;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 10px;
   margin: 20px 0;
-  background-color: #efdbd0;
+  background-color: black;
+  color: #efdbd0;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  background-color: #ec9c51;
+}
+
+form button:active {
+  -webkit-box-shadow: 2px 2px black;
+          box-shadow: 2px 2px black;
 }
 
 .contact ul {
@@ -538,7 +576,7 @@ form button {
   color: black;
 }
 
-.emailPhone {
+.email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,16 +586,14 @@ form button {
           flex-direction: column;
 }
 
-.emailPhone a {
+.email a {
   color: black;
   text-decoration: none;
   padding: 5px;
 }
 
 .about {
-  background: #131212;
-  background: -webkit-gradient(linear, left top, left bottom, from(#131212), color-stop(0%, #efdbd0), color-stop(96%, #ffbd81));
-  background: linear-gradient(180deg, #131212 0%, #efdbd0 0%, #ffbd81 96%);
+  background-color: white;
   text-align: center;
   padding: 5% 0 0 0;
 }
@@ -566,6 +602,10 @@ form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -575,15 +615,14 @@ form button {
   text-transform: none;
   text-align: left;
   font-weight: 300;
-  width: 50%;
-  padding: 5% 0 5% 25px;
+  width: calc(50% - 10px);
+  padding: 5% 10px 5% 25px;
   line-height: 30px;
 }
 
 .aboutPhoto {
   margin: 0 auto;
-  width: 50%;
-  border-radius: 50%;
+  width: calc(50% - 10px);
   padding: 5% 0;
 }
 
@@ -593,15 +632,13 @@ form button {
      object-fit: cover;
   -o-object-position: right;
      object-position: right;
-  border-radius: 15%;
+  border-radius: 30% 70% 38% 62%/54% 74% 26% 46%;
   -webkit-box-shadow: 3px 3px 3px #f6b8c5;
           box-shadow: 3px 3px 3px #f6b8c5;
 }
 
 .portfolio {
-  background: #131212;
-  background: -webkit-gradient(linear, left top, left bottom, from(#131212), color-stop(0%, #ffbd81), color-stop(96%, #f6b8c5));
-  background: linear-gradient(180deg, #131212 0%, #ffbd81 0%, #f6b8c5 96%);
+  background-color: #f6b8c5;
   text-align: center;
   padding: 5% 0;
 }
@@ -625,8 +662,8 @@ form button {
   -o-object-fit: fill;
      object-fit: fill;
   border-radius: 15px;
-  -webkit-box-shadow: 3px 3px 3px #ffbd81;
-          box-shadow: 3px 3px 3px #ffbd81;
+  -webkit-box-shadow: 4px 4px 3px black;
+          box-shadow: 4px 4px 3px black;
 }
 
 .carousel {
@@ -680,7 +717,7 @@ form button {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #efdbd0;
+  background-color: white;
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
@@ -688,7 +725,7 @@ form button {
 }
 
 .active, .dot:hover {
-  background-color: #ffbd81;
+  background-color: black;
 }
 
 @media (max-width: 768px) {
