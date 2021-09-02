@@ -15,8 +15,15 @@
     }
 
     h1 {
-        font-size: calc(1.6rem + 2vw);
+        font-size: calc(3rem + 3vw);
+
+        flex-direction: column;
     }
+
+
+    h1 span {
+    font-size: calc(3rem + 3vw);
+}
 
     h3 {
         font-size: 1.8rem;
@@ -39,7 +46,12 @@
 
 
     h1 {
-        font-size: calc(2rem + 3vw);
+        font-size: calc(2rem + 2vw);
+    }
+
+
+    h1 span {
+    font-size: calc(2rem + 2vw);
     }
 
     .menuButton {

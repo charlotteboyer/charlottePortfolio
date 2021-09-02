@@ -395,6 +395,7 @@ h1 {
   text-transform: uppercase;
   vertical-align: middle;
   margin: 0 auto;
+  max-width: 1080px;
   width: 70%;
   padding: 2vw 0;
   border: 2px solid black;
@@ -403,6 +404,16 @@ h1 {
           animation: slide 1s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.boyer {
+  padding-left: 25px;
 }
 
 h1 span {
@@ -746,7 +757,15 @@ form button:active {
   }
 
   h1 {
-    font-size: calc(1.6rem + 2vw);
+    font-size: calc(3rem + 3vw);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  h1 span {
+    font-size: calc(3rem + 3vw);
   }
 
   h3 {
@@ -763,7 +782,11 @@ form button:active {
 }
 @media (max-width: 480px) {
   h1 {
-    font-size: calc(2rem + 3vw);
+    font-size: calc(2rem + 2vw);
+  }
+
+  h1 span {
+    font-size: calc(2rem + 2vw);
   }
 
   .menuButton {

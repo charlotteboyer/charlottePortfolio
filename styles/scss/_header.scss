@@ -73,6 +73,8 @@ h1 {
 
     margin: 0 auto;
 
+    max-width: 1080px;
+
     width: 70%;
 
     padding: 2vw 0;
@@ -82,6 +84,13 @@ h1 {
 
     animation: slide 1s;
     animation-iteration-count: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.boyer {
+    padding-left: 25px;
 }
 
 h1 span {
