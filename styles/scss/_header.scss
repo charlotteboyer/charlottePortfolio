@@ -82,11 +82,12 @@ h1 {
     border: 2px solid black; 
     border-radius: 5px;
 
-    animation: slide 1s;
-    animation-iteration-count: 1;
-
     display: flex;
     justify-content: center;
+
+    animation: slide 3s;
+    animation-iteration-count: 1;
+
 }
 
 .boyer {

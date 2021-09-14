@@ -400,16 +400,16 @@ h1 {
   padding: 2vw 0;
   border: 2px solid black;
   border-radius: 5px;
-  -webkit-animation: slide 1s;
-          animation: slide 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: slide 3s;
+          animation: slide 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .boyer {
