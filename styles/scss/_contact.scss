@@ -1,8 +1,6 @@
 .contact {
-    background-color: $boringBeige;
-
+    background-color: white;
     text-align: center;
-
     padding: 5% 0;
 }
 
@@ -37,7 +35,7 @@ input, textarea {
     text-transform: capitalize;
     background-color: white;
     border: none;
-    box-shadow: 2px 2px 2px black; 
+    box-shadow: 2px 2px 2px 2px black; 
     margin: 10px 0;
     padding: 20px 0 20px 20px;
 }
@@ -48,12 +46,13 @@ form button {
     padding: 10px 10px;
     margin: 20px 0;
     background-color: black;
-    color: $boringBeige;
+    color: white;
     text-transform: uppercase;
 }
 
 form button:hover {
-    background-color: #ec9c51;
+    background-color: white;
+    color: black;
 }
 
 form button:active {

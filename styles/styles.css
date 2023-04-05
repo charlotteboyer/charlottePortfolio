@@ -5,7 +5,8 @@ html {
   color: black;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -57,7 +58,6 @@ form {
 }
 
 footer {
-  background-color: #efdbd0;
   text-align: center;
   padding: 20px;
 }
@@ -318,9 +318,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ffbd81;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffbd81), color-stop(46%, #f6b8c5), color-stop(96%, #efdbd0));
-  background: linear-gradient(180deg, #ffbd81 0%, #f6b8c5 46%, #efdbd0 96%);
+  background: white;
   height: 100vh;
   color: black;
 }
@@ -365,7 +363,7 @@ nav ul {
 
 .navFixed a {
   font-size: 1.8rem;
-  color: #efdbd0;
+  color: white;
 }
 
 .menuButton {
@@ -383,6 +381,18 @@ nav ul {
   border-radius: 50%;
 }
 
+.menuIcon {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.menuWords {
+  position: relative;
+}
+
 .show {
   display: block;
 }
@@ -398,8 +408,6 @@ h1 {
   max-width: 1080px;
   width: 70%;
   padding: 2vw 0;
-  border: 2px solid black;
-  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,6 +422,10 @@ h1 {
 
 .boyer {
   padding-left: 25px;
+}
+
+.smileyFace {
+  color: yellow;
 }
 
 h1 span {
@@ -466,8 +478,8 @@ h1 span i:hover {
 }
 @-webkit-keyframes fall {
   from {
-    -webkit-transform: translate(0, -200px);
-            transform: translate(0, -200px);
+    -webkit-transform: translate(0, -400px);
+            transform: translate(0, -400px);
   }
   to {
     -webkit-transform: translate(0, 0);
@@ -476,8 +488,8 @@ h1 span i:hover {
 }
 @keyframes fall {
   from {
-    -webkit-transform: translate(0, -200px);
-            transform: translate(0, -200px);
+    -webkit-transform: translate(0, -400px);
+            transform: translate(0, -400px);
   }
   to {
     -webkit-transform: translate(0, 0);
@@ -486,8 +498,8 @@ h1 span i:hover {
 }
 @-webkit-keyframes slide {
   from {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
   }
   to {
     -webkit-transform: translate(0, 0);
@@ -496,8 +508,8 @@ h1 span i:hover {
 }
 @keyframes slide {
   from {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
   }
   to {
     -webkit-transform: translate(0, 0);
@@ -505,7 +517,7 @@ h1 span i:hover {
   }
 }
 .contact {
-  background-color: #efdbd0;
+  background-color: white;
   text-align: center;
   padding: 5% 0;
 }
@@ -543,8 +555,8 @@ input, textarea {
   text-transform: capitalize;
   background-color: white;
   border: none;
-  -webkit-box-shadow: 2px 2px 2px black;
-          box-shadow: 2px 2px 2px black;
+  -webkit-box-shadow: 2px 2px 2px 2px black;
+          box-shadow: 2px 2px 2px 2px black;
   margin: 10px 0;
   padding: 20px 0 20px 20px;
 }
@@ -555,12 +567,13 @@ form button {
   padding: 10px 10px;
   margin: 20px 0;
   background-color: black;
-  color: #efdbd0;
+  color: white;
   text-transform: uppercase;
 }
 
 form button:hover {
-  background-color: #ec9c51;
+  background-color: white;
+  color: black;
 }
 
 form button:active {
@@ -628,13 +641,17 @@ form button:active {
           align-items: center;
 }
 
-.about p {
+.aboutBlurb {
   text-transform: none;
   text-align: left;
   font-weight: 300;
   width: calc(50% - 10px);
   padding: 5% 10px 5% 25px;
   line-height: 30px;
+}
+
+.about p {
+  text-transform: none;
 }
 
 .aboutPhoto {
@@ -650,12 +667,10 @@ form button:active {
   -o-object-position: right;
      object-position: right;
   border-radius: 30% 70% 38% 62%/54% 74% 26% 46%;
-  -webkit-box-shadow: 3px 3px 3px #f6b8c5;
-          box-shadow: 3px 3px 3px #f6b8c5;
 }
 
 .portfolio {
-  background-color: #f6b8c5;
+  background-color: white;
   text-align: center;
   padding: 5% 0;
 }
@@ -752,16 +767,13 @@ form button:active {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .aboutPhoto {
     width: 75%;
   }
-
   .about p {
     font-size: 1.6rem;
     width: 100%;
   }
-
   h1 {
     font-size: calc(3rem + 3vw);
     -webkit-box-orient: vertical;
@@ -769,19 +781,15 @@ form button:active {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   h1 span {
     font-size: calc(3rem + 3vw);
   }
-
   h3 {
     font-size: 1.8rem;
   }
-
   .portfolio p {
     font-size: 1.6rem;
   }
-
   form {
     width: 100%;
   }
@@ -790,21 +798,17 @@ form button:active {
   h1 {
     font-size: calc(2rem + 2vw);
   }
-
   h1 span {
     font-size: calc(2rem + 2vw);
   }
-
   .menuButton {
     display: block;
     z-index: 1005;
   }
-
   .menuButton i:hover {
     background: #efdbd0;
     border-radius: 50%;
   }
-
   nav ul {
     width: auto;
     top: 60px;
@@ -826,44 +830,35 @@ form button:active {
     background: #ffbd81;
     padding-top: 5px;
   }
-
   nav a {
     font-size: 1.8rem;
     padding: 5px;
   }
-
   nav a:hover {
     background-color: #efdbd0;
   }
-
   .navFixed {
     background: none;
   }
-
   .navFixed a {
     color: black;
   }
-
   .about p {
     line-height: 20px;
     text-align: center;
   }
-
   .prev,
 .next {
     font-size: 2rem;
   }
-
   .next {
     right: 0;
     bottom: 70%;
   }
-
   .prev {
     left: 0;
     bottom: 70%;
   }
-
   h3 {
     font-size: 1.2rem;
   }
