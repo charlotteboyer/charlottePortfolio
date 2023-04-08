@@ -377,7 +377,7 @@ nav ul {
 }
 
 .menuButton i {
-  background: #ffbd81;
+  background: white;
   border-radius: 50%;
 }
 
@@ -422,10 +422,6 @@ h1 {
 
 .boyer {
   padding-left: 25px;
-}
-
-.smileyFace {
-  color: yellow;
 }
 
 h1 span {
@@ -806,7 +802,7 @@ form button:active {
     z-index: 1005;
   }
   .menuButton i:hover {
-    background: #efdbd0;
+    background: rgb(255, 225, 0);
     border-radius: 50%;
   }
   nav ul {
@@ -827,7 +823,7 @@ form button:active {
     -webkit-animation: none;
             animation: none;
     position: fixed;
-    background: #ffbd81;
+    background: rgb(255, 225, 0);
     padding-top: 5px;
   }
   nav a {
@@ -835,7 +831,7 @@ form button:active {
     padding: 5px;
   }
   nav a:hover {
-    background-color: #efdbd0;
+    background-color: white;
   }
   .navFixed {
     background: none;
